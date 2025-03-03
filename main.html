@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Navbar & Audios</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-	<nav>
-		<ul>
-			<li><a href="#home" id="nav-home">Home</li>
-			<li><a href="#about" id="nav-about">About</li>
-			<li><a href="#contact" id="nav-contact">Contact</li>
-		</ul>
-	</nav>
-	<section>
-		<h2> 3 Random Audios</h2>
-			<audio controls>
+    <!-- Part 1: Semantic Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home" id="nav-home">Home</a></li>
+            <li><a href="#about" id="nav-about">About</a></li>
+            <li><a href="#contact" id="nav-contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Part 2: Audio Section -->
+    <main>
+        <section>
+            <h2>3 Random Audios</h2>
+            <audio controls>
                 <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
@@ -29,11 +32,8 @@
                 <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-	</section>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+        </section>
+    </main>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>

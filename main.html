@@ -34,6 +34,14 @@
             </audio>
         </section>
     </main>
-    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            const audios = document.querySelectorAll("audio");
+            console.log("Number of audio elements:", audios.length);
+            audios.forEach(audio => {
+                console.log("Audio source:", audio.querySelector("source").src);
+            });
+        });
+    </script>
 </body>
 </html>
